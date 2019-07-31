@@ -1,0 +1,48 @@
+{
+  "name": "test",
+  "version": "0.10.0",
+  "engines": {
+    "node": "^10.15.3",
+    "yarn": "^1.12.3"
+  },
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "files": [
+    "build/src/**/*.js",
+    "build/src/**/*.d.ts",
+    "LICENSE",
+    "NOTICE",
+    "README.md"
+  ],
+  "nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "exclude": [
+      "coverage/**",
+      "prettier.config.js",
+      "**/*.d.ts",
+      "test/**/*.*",
+      "build/**/**/*.js"
+    ],
+    "all": true
+  },
+  "author": "Holvonix LLC",
+  "license": "SEE LICENSE IN LICENSE",
+  "private": true,
+  "scripts": {
+    "compile": "tsc -p ."
+  },
+  "dependencies": {
+    "terraformer-wkt-parser": "^1.2.0"
+  },
+  "devDependencies": {
+    "terraformer": "^1.0.9",
+    "@types/geojson": "^7946.0.7",
+    "@types/node": "^12.6.1",
+    "gts": "^1.0.0",
+    "source-map-support": "^0.5.12",
+    "typescript": "~3.5.0"
+  }
+}
