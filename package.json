@@ -35,10 +35,9 @@
     "compile": "tsc -p ."
   },
   "dependencies": {
-    "terraformer-wkt-parser": "^1.2.0"
+    "terraformer": "^1.0.9"
   },
   "devDependencies": {
-    "terraformer": "^1.0.9",
     "@types/geojson": "^7946.0.7",
     "@types/node": "^12.6.1",
     "gts": "^1.0.0",
